@@ -7,26 +7,33 @@
 </head>
 <body>
 
-  <div class="container">
-    <h1>🎭 Mood Driven UI</h1>
-    <p>Select your current mood and watch the UI adapt.</p>
+<div class="container">
+  <h1>🎭 Mood Driven UI</h1>
 
-    <select id="moodSelector">
-      <option value="">-- Select Mood --</option>
-      <option value="happy">😊 Happy</option>
-      <option value="sad">😔 Sad</option>
-      <option value="stressed">😵‍💫 Stressed</option>
-      <option value="focused">🎯 Focused</option>
-    </select>
+  <select id="moodSelector">
+    <option value="">-- Select Mood --</option>
+    <option value="happy">😊 Happy</option>
+    <option value="sad">😔 Sad</option>
+    <option value="stressed">😵‍💫 Stressed</option>
+    <option value="focused">🎯 Focused</option>
+  </select>
 
-    <div class="card">
-      <h2 id="moodTitle">Your Mood Will Appear Here</h2>
-      <p id="moodText">
-        UI will adapt based on your emotional state.
-      </p>
-    </div>
+  <textarea id="sentimentInput" placeholder="Type how you feel..."></textarea>
+
+  <div class="card">
+    <h2 id="moodTitle">Your Mood</h2>
+    <p id="moodText">Select text to highlight and save notes.</p>
   </div>
 
-  <script src="script.js"></script>
+  <div class="buttons">
+    <button id="exportNotes">Export Highlights</button>
+    <button id="clearHighlight">Clear Highlights</button>
+  </div>
+
+  <h3>📊 Mood Timeline</h3>
+  <ul id="timeline"></ul>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
