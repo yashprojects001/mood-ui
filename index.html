@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mood Driven UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎭 Mood Driven UI</h1>
+    <p>Select your current mood and watch the UI adapt.</p>
+
+    <select id="moodSelector">
+      <option value="">-- Select Mood --</option>
+      <option value="happy">😊 Happy</option>
+      <option value="sad">😔 Sad</option>
+      <option value="stressed">😵‍💫 Stressed</option>
+      <option value="focused">🎯 Focused</option>
+    </select>
+
+    <div class="card">
+      <h2 id="moodTitle">Your Mood Will Appear Here</h2>
+      <p id="moodText">
+        UI will adapt based on your emotional state.
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
